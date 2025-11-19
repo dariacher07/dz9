@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="IGamу.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>IGamу.cs</DependentUpon>
+      <LastGenOutput>IGamу.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="IGames.cs">
+      <DependentUpon>IGames.cs</DependentUpon>
+      <LastGenOutput>IGames.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Team.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Team.cs</DependentUpon>
+      <LastGenOutput>Team.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Games.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Games.cs</DependentUpon>
+      <LastGenOutput>Games.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Members.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Members.cs</DependentUpon>
+      <LastGenOutput>Members.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="BigRaces.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>BigRaces.cs</DependentUpon>
+      <LastGenOutput>BigRaces.cs</LastGenOutput>
+    </Compile>
+  </ItemGroup>
+</Project>

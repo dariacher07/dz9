@@ -7,4 +7,84 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="упражнение\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Progra.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Progra.cs</DependentUpon>
+      <LastGenOutput>Progra.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Program.cs">
+      <DependentUpon>Program.cs</DependentUpon>
+    </Compile>
+    <Compile Update="ACipheк.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>ACipheк.cs</DependentUpon>
+      <LastGenOutput>ACipheк.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Figure.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Figure.cs</DependentUpon>
+      <LastGenOutput>Figure.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Point.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Point.cs</DependentUpon>
+      <LastGenOutput>Point.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Circle.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Circle.cs</DependentUpon>
+      <LastGenOutput>Circle.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Rectangle.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>Rectangle.cs</DependentUpon>
+      <LastGenOutput>Rectangle.cs</LastGenOutput>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Упражнение1\ACipher.cs">
+      <DependentUpon>..\ACipher.cs</DependentUpon>
+      <LastGenOutput>ACipher.cs</LastGenOutput>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Упражнение1\BCipher.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>..\BCipher.cs</DependentUpon>
+      <LastGenOutput>BCipher.cs</LastGenOutput>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Упражнение1\ICipher.cs">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <DependentUpon>..\ICipher.cs</DependentUpon>
+      <LastGenOutput>ICipher.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Домашнее задание 1\Circle.cs">
+      <DependentUpon>Circle.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Circle.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Домашнее задание 1\Figure.cs">
+      <DependentUpon>Figure.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Figure.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Домашнее задание 1\Point.cs">
+      <DependentUpon>Point.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Point.cs</LastGenOutput>
+    </Compile>
+    <Compile Update="Домашнее задание 1\Rectangle.cs">
+      <DependentUpon>Rectangle.cs</DependentUpon>
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Rectangle.cs</LastGenOutput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Упражнение1\" />
+    <None Remove="Домашнее задание 1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Упражнение1\" />
+    <Folder Include="Домашнее задание 1\" />
+  </ItemGroup>
 </Project>
